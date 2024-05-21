@@ -25,6 +25,8 @@ jobs:
           pip install openai pyyaml
 
       - name: Generate image and update Markdown
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python scripts/generate_image_and_update_md.py
 
