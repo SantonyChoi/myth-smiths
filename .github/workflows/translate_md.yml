@@ -24,11 +24,6 @@ jobs:
         run: |
           pip install openai pyyaml
 
-      - name: Checkout PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        run: gh pr checkout ${{ github.event.pull_request.number }}
-
       - name: Translate Markdown
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -39,8 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'myth-smiths-bot'
+          git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
           git add .
           git commit -m 'Add translated episode'
           git push origin HEAD:${{ github.head_ref }}
