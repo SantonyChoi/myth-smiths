@@ -1,1 +1,1 @@
-There were small creatures in the world. They changed the soil. No other organisms appeared there.
+There were small beings in the world. They altered the soil. No other life forms appeared there.
