@@ -18,7 +18,7 @@ def translate_text(text, target_language="en"):
         ],
         max_tokens=1000,
     )
-    return response.choices[0].message["content"].strip()
+    return response.choices[0].message.content.strip()
 
 
 def translate_markdown(file_path):
