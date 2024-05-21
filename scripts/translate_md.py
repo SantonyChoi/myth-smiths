@@ -33,5 +33,6 @@ def translate_markdown(file_path):
 
 
 pr_files = glob.glob("episodes/*.md")
-for file_path in pr_files:
-    translate_markdown(file_path)
+pr_files = [file for file in pr_files if "_en.md" not in file]
+pr_files.sort(key=os.path.getmtime)
+translate_markdown(pr_files[-1])
