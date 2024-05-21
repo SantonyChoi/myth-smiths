@@ -34,8 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'myth-smiths-bot'
+          git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
           git add .
           git commit -m 'Add generated image to episode'
-          git push origin main
+          git push origin HEAD:${{ github.head_ref }}
