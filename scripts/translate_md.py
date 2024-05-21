@@ -1,13 +1,12 @@
 import openai
 import os
 import glob
-import re
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def translate_text(text, target_language="en"):
     response = openai.Completion.create(
-        model="text-davinci-002",
+        model="text-davinci-003",
         prompt=f"Translate the following text to {target_language}:\n\n{text}",
         max_tokens=1000
     )
