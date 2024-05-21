@@ -7,7 +7,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def generate_image(prompt):
-    response = client.image.generate(
+    response = client.images.generate(
         prompt=prompt, n=1, size="1024x1024", model="dall-e-3", quality="standard"
     )
     return response.data[0].url
@@ -27,8 +27,5 @@ episode_files = glob.glob("episodes/*.md")
 latest_file = max(episode_files, key=os.path.getmtime)
 with open(latest_file, "r") as file:
     content = file.read()
-    title_match = re.search(r"^#\s*(.+)", content, re.MULTILINE)
-    if title_match:
-        title = title_match.group(1)
-        image_url = generate_image(title)
-        update_markdown(latest_file, image_url)
+    image_url = generate_image(content)
+    update_markdown(latest_file, image_url)

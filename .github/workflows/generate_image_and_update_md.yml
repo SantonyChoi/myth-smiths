@@ -1,4 +1,4 @@
-name: Episode Upload
+name: Generate Image and Update Markdown
 
 on:
   push:
