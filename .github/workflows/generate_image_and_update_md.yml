@@ -1,0 +1,37 @@
+name: Episode Upload
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'episodes/*.md'
+
+jobs:
+  generate_image_and_update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install openai pyyaml
+
+      - name: Generate image and update Markdown
+        run: |
+          python scripts/generate_image_and_update_md.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m 'Add generated image to episode'
+          git push origin main
