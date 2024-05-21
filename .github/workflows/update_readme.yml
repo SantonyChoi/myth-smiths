@@ -25,6 +25,8 @@ jobs:
           pip install pyyaml
 
       - name: Update Readme
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python scripts/update_readme.py
 
