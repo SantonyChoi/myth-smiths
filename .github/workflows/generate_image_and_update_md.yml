@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'episodes/*.md'
+      - "episodes/*.md"
 
 jobs:
   generate_image_and_update:
@@ -14,11 +14,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
         run: |
