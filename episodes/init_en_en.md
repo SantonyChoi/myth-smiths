@@ -1,1 +1,0 @@
-Había pequeñas criaturas en el mundo. Transformaban la tierra. No aparecían otros seres allí.
