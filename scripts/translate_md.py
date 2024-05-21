@@ -2,15 +2,19 @@ import openai
 import os
 import glob
 
+# Ensure the OpenAI API key is set in your environment
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def translate_text(text, target_language="en"):
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=f"Translate the following text to {target_language}:\n\n{text}",
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": f"Translate the following text to {target_language}:"},
+            {"role": "user", "content": text}
+        ],
         max_tokens=1000
     )
-    return response.choices[0].text.strip()
+    return response.choices[0].message['content'].strip()
 
 def translate_markdown(file_path):
     with open(file_path, 'r') as file:
