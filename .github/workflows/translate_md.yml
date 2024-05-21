@@ -24,6 +24,11 @@ jobs:
         run: |
           pip install openai pyyaml
 
+      - name: Checkout PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr checkout ${{ github.event.pull_request.number }}
+
       - name: Translate Markdown
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
