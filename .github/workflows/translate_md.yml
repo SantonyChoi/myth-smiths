@@ -23,6 +23,8 @@ jobs:
           pip install openai pyyaml
 
       - name: Translate Markdown
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python scripts/translate_md.py
 
