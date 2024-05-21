@@ -40,4 +40,4 @@ jobs:
           git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
           git add .
           git commit -m 'Add generated image to episode'
-          git push origin HEAD:${{ github.head_ref }}
+          git push origin main

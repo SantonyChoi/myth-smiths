@@ -40,4 +40,4 @@ jobs:
           git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
           git add README.md
           git commit -m 'Update Readme with new episodes'
-          git push origin HEAD:${{ github.head_ref }}
+          git push origin main
