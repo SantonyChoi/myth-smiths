@@ -1,1 +1,3 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-x0TM1rkmKSUrWPeKFpfn8sXl.png?st=2024-05-22T14%3A47%3A23Z&se=2024-05-22T16%3A47%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-22T10%3A12%3A51Z&ske=2024-05-23T10%3A12%3A51Z&sks=b&skv=2021-08-06&sig=KBkaJadecqPjHc7RG6T2B9gkSKRFEc4fvfa9prNHJRw%3D)
+
 Humans naturally expanded their territories. What started as just one village eventually grew to encompass everywhere they could reach. And then, war broke out.
