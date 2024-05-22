@@ -26,6 +26,12 @@ jobs:
         run: |
           pip install openai pyyaml
 
+      - name: Get the latest modified markdown file
+        id: get_latest_file
+        run: |
+          latest_file=$(git diff --name-only origin/main | grep 'episodes/.*\.md$' | grep -v '_en\.md$' | tail -n 1)
+          echo "latest_file=$latest_file" >> $GITHUB_ENV
+
       - name: Generate image and update Markdown
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

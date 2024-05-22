@@ -1,7 +1,6 @@
 from openai import OpenAI
 import os
-import glob
-import re
+import sys
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -27,9 +26,14 @@ def update_markdown(file_path, image_url):
         file.write(content)
 
 
-episode_files = glob.glob("episodes/*.md")
-latest_file = max(episode_files, key=os.path.getmtime)
-with open(latest_file, "r") as file:
-    content = file.read()
-    image_url = generate_image(content)
-    update_markdown(latest_file, image_url)
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: generate_image_and_update_md.py <file_path>")
+        sys.exit(1)
+
+    file_path = sys.argv[1]
+
+    with open(file_path, "r") as file:
+        content = file.read()
+        image_url = generate_image(content)
+        update_markdown(file_path, image_url)
