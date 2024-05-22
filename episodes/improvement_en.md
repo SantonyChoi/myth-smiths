@@ -1,0 +1,1 @@
+Humans naturally expanded their territories. What started as just one village eventually grew to encompass everywhere they could reach. And then, war broke out.
