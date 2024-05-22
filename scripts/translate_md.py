@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
 import glob
+import sys
 
 # Ensure the OpenAI API key is set in your environment
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -32,7 +33,10 @@ def translate_markdown(file_path):
         file.write(translated_content)
 
 
-pr_files = glob.glob("episodes/*.md")
-pr_files = [file for file in pr_files if "_en.md" not in file]
-pr_files.sort(key=os.path.getmtime)
-translate_markdown(pr_files[-1])
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: translate_md.py <file_path>")
+        sys.exit(1)
+
+    file_path = sys.argv[1]
+    translate_markdown(file_path)
