@@ -55,7 +55,7 @@ jobs:
         run: |
           git config --global user.name 'myth-smiths-bot'
           git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
-          git pull --rebase
+          git pull
           git add .
           git commit -m 'Add generated image to episode & Update Readme with new episodes' || echo "No changes to commit"
           git push origin main
