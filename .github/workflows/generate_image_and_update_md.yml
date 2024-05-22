@@ -36,7 +36,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python scripts/generate_image_and_update_md.py
+          python scripts/generate_image_and_update_md.py ${{ env.latest_file }}
 
       - name: Update Readme
         env:
