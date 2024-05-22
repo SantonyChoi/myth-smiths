@@ -1,1 +1,3 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-zg89Ts52jhHtrKqaxOi29JVX.png?st=2024-05-22T14%3A40%3A41Z&se=2024-05-22T16%3A40%3A41Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-22T11%3A17%3A27Z&ske=2024-05-23T11%3A17%3A27Z&sks=b&skv=2021-08-06&sig=D/LbffQDNUl7q1txwyFAPXEDkqMvxjTb/BLC6bKjGgg%3D)
+
 Humans lived together in groups. They did not know what existed on the other side of the world, but at least in the domain shared by the 'small beings', humans were the strongest beings.
