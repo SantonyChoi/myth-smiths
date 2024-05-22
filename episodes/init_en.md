@@ -1,3 +1,3 @@
-There were tiny beings in the world. They changed the soil, but no other life forms appeared there. The soil they changed looked no different to the naked eye. Sand looked like sand, water looked like water. The only thing known was that no living creatures lived there.
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-xoqDaWafji4HfcwyxPVWyx2m.png?st=2024-05-21T15%3A47%3A34Z&se=2024-05-21T17%3A47%3A34Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-21T10%3A10%3A22Z&ske=2024-05-22T10%3A10%3A22Z&sks=b&skv=2021-08-06&sig=ALzSoVTYeFuv%2B9ZmQThiLBR3SgZd/2I/O0cBAC9oBvs%3D)
 
-As their presence that covered the earth began to fade, life was born. At first, small creatures emerged, then larger animals, and finally, humans were born.
+There were small beings in the world. They altered the soil. No other life forms appeared there.
