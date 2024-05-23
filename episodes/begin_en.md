@@ -1,9 +1,9 @@
-What were the small beings? Their domains contracted gradually over time.
+What were the small beings? Their domain gradually shrunk as time passed.
 
-As their domains, which served as barriers dividing the territories of living organisms, shrank, various life forms began to meet in different places. Encounters between different life forms were sometimes peaceful or even majestic, but mostly accompanied by violence. As the dominant predators in their own domains, it was a natural order of things.
+Their domain was a barrier that divided the space between living beings. As their domain shrank, encounters between different life forms occurred in various places. The encounters between different life forms were generally accompanied by violence. This was a natural course of events as each living being ruled its own domain.
 
-Naturally, a hierarchy formed among the life forms. In human society, it was referred to as a food chain, but since not all organisms preyed on others, a more appropriate term was needed. Above all, their hierarchy was not for survival. Each of them was already advanced enough to thrive within their own domains. Therefore, it could be said that their hierarchy was more of a power structure than a food chain. Simply to assert their authority.
+The beings soon established a hierarchy. In human society, this was referred to as the food chain, but since not all beings preyed on each other, a more suitable term was needed. Above all, their hierarchy was not for survival. Each of them was already a developed being capable of sustaining life within their own domain. Therefore, their hierarchy could be more accurately described as a chain of power, rather than a food chain. It was solely to assert their authority.
 
-Another new belief that emerged was the belief, more like a certainty, that there were other life forms yet to be encountered. This belief soon turned into fear. It was fear of future unknown adversaries. Many life forms began to prepare not only for power struggles within their domains but also for conflicts with unseen beings.
+Another new development was the emergence of belief. It was a belief, bordering on certainty, that other undiscovered life forms existed. This belief soon turned into fear, a fear of future enemies yet to come. Many beings began to prepare not only for power struggles within their domains, but also for conflicts with unseen entities.
 
-However, a being with the intention to overcome the domains of the small beings had not yet appeared.
+The beings observed the changes in the small beings' domain more attentively than before. However, there was no being yet with the intention of overcoming the domain of the small beings.
