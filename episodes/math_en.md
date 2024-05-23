@@ -1,3 +1,5 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-9C7T5LcMG0UWIZ2xl7M5RCWk.png?st=2024-05-23T13%3A04%3A10Z&se=2024-05-23T15%3A04%3A10Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-23T10%3A23%3A52Z&ske=2024-05-24T10%3A23%3A52Z&sks=b&skv=2021-08-06&sig=4KxX51c0nDRJb5nR1%2B4ZnMsGNdr3/ZmXN1qbuvV%2B4T0%3D)
+
 Intelligent beings had different means of understanding the world. Humans adopted mathematics as their tool. They believed that much of the nature of the world could be understood through numbers, and that by studying mathematics, they could comprehend all truths.
 
 However, not all beings chose the same means as them. Some species sought to understand the world through exploring magic. The magic they wielded was a practice of directly interacting with and understanding the elements of nature, sometimes even manipulating them. Naturally, they became able to delve deeper into the various elements of the world.
