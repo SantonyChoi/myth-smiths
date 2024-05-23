@@ -1,0 +1,5 @@
+Some intelligent beings did not attempt to understand the world around them. They simply accepted the life given to them and did not develop their abilities towards contemplating metaphysical concepts. They had no thirst for knowledge.
+
+Humans believed that necessity and desire were the mother of progress. How would beings that did not make any effort beyond following their given nature have appeared to them?
+
+After two beings met, they spent quite a long time trying to understand each other. They tried to explain themselves and to exchange populations to adopt each other's culture. However, all efforts were in vain. Perhaps it was because the reasons for their existence, given by the Creator, were different. After much effort, they gave up trying to understand each other. They were destined to remain strangers as their purposes were different.
