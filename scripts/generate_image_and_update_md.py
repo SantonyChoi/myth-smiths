@@ -7,7 +7,19 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def generate_image(prompt):
     response = client.images.generate(
-        prompt="Create an image based on the story below\n" + "---\n" + prompt,
+        prompt="Here are the requirements for the image:\n"
+        + "---\n"
+        + "Fantasy theme\n"
+        + "Glamourous\n"
+        + "No creepy image\n"
+        + "No NSFW content\n"
+        + "No text on the image\n"
+        + "---\n"
+        + "Here's the text description:\n"
+        + "---\n"
+        + prompt
+        + "---\n"
+        + "Create an image based on the requirements and the description above.",
         n=1,
         size="1024x1024",
         model="dall-e-3",
