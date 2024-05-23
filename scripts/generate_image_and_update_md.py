@@ -21,7 +21,7 @@ def generate_image(prompt):
         + "---\n"
         + "Create an image based on the requirements and the description above.",
         n=1,
-        size="512x512",
+        size="1024x1024",
         model="dall-e-3",
         quality="standard",
     )
