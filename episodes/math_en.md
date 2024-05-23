@@ -1,0 +1,3 @@
+Intelligent beings had different means of understanding the world. Humans adopted mathematics as their tool. They believed that much of the nature of the world could be understood through numbers, and that by studying mathematics, they could comprehend all truths.
+
+However, not all beings chose the same means as them. Some species sought to understand the world through exploring magic. The magic they wielded was a practice of directly interacting with and understanding the elements of nature, sometimes even manipulating them. Naturally, they became able to delve deeper into the various elements of the world.
