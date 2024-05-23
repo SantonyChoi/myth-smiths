@@ -1,3 +1,5 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-I1WGySoIofF0O9iPeJ4pA2dm.png?st=2024-05-23T13%3A48%3A02Z&se=2024-05-23T15%3A48%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-23T10%3A31%3A40Z&ske=2024-05-24T10%3A31%3A40Z&sks=b&skv=2021-08-06&sig=Vu7Nxyi2APfm3/ms9yWVdkRebxVb3qnhHgVf5Q1xC00%3D)
+
 Some intelligent beings did not attempt to understand the world around them. They simply accepted the life given to them and did not develop their abilities towards contemplating metaphysical concepts. They had no thirst for knowledge.
 
 Humans believed that necessity and desire were the mother of progress. How would beings that did not make any effort beyond following their given nature have appeared to them?
