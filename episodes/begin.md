@@ -1,3 +1,5 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-bOy7PWVcw0K70n7KWjBST4f6.png?st=2024-05-23T14%3A51%3A25Z&se=2024-05-23T16%3A51%3A25Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-23T11%3A02%3A21Z&ske=2024-05-24T11%3A02%3A21Z&sks=b&skv=2021-08-06&sig=k3I4f4lZIVZOmqhFJTM7Jok08kYQTpE0uXG4Z%2B78u3Q%3D)
+
 작은 존재는 무엇이었을까? 그들의 영역은 시간이 지나면서 조금씩 수축했다.
 
 그들의 영역은 그 자체로 생명체들간의 공간을 나누는 장벽이었다. 그들의 영역이 줄어들면서 곳곳에서 서로 다른 생명체들이 만나는 일이 벌어졌다. 서로 다른 생명체들의 조우는 대체로 폭력을 동반했다. 각자의 영역을 지배하던 생명체들이었기에 이는 자연스러운 수순이었다.
