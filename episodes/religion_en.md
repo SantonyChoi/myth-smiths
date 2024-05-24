@@ -1,0 +1,3 @@
+Let's talk about religion. Intellectual beings, especially species that have dominion over their respective domains, shared a commonality: they all had their own religions. The forms varied, but the essence was the same.
+
+Religion gave beings facing death the courage not to fear it. Ultimately, for beings who must face death, the hope that religion bestows is an invaluable element unlike any other.
