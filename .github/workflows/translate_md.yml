@@ -27,6 +27,11 @@ jobs:
         run: |
           pip install openai pyyaml
 
+      - name: Print last commit message for debugging
+        run: |
+          set -eux
+          git log --oneline -n 1
+
       - name: Check for [TRANSLATE] in commit messages
         id: check_translate
         run: |
