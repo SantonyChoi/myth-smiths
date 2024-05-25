@@ -1,6 +1,6 @@
 # Myth-Smiths
 
-Welcome to the Myth-Smiths project! This repository is dedicated to the creation and organization of a detailed fantasy world. If you're interested in contributing, please read the following guidelines.
+Welcome to the Myth-Smiths! This repository is dedicated to the creation and organization of a detailed fantasy world. If you're interested in contributing, please read the following guidelines.
 
 ## Directory Structure
 
@@ -9,6 +9,10 @@ The project is organized into the following directories:
 ```plaintext
 myth-smiths/
 ├── world-building/
+│   ├── history/
+│   ├── geography/
+│   ├── species/
+│   └── culture/
 ├── character-profiles/
 │   ├── main-characters/
 │   ├── supporting-characters/
@@ -20,8 +24,6 @@ myth-smiths/
 │   └── minor-events/
 ├── main-story/
 └── miscellaneous/
-    ├── setting-materials/
-    └── reference-materials/
 ```
 
 ## Contributing
