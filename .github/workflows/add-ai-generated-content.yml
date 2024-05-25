@@ -34,17 +34,20 @@ jobs:
           echo "Last commit message: $commit_message"
           if echo "$commit_message" | grep -q '\[TRANSLATE\]'; then
             echo "TRANSLATE=true"
-            echo "TRANSLATE=true" >> $GITHUB_ENV
+            file_to_translate=$(echo "$commit_message" | grep -o 'drafts/[^ ]*')
+            echo "file_to_translate=$file_to_translate" >> $GITHUB_ENV
           else
             echo "TRANSLATE=false"
-            echo "TRANSLATE=false" >> $GITHUB_ENV
+            echo "file_to_translate=" >> $GITHUB_ENV
           fi
+
           if echo "$commit_message" | grep -q '\[GENERATE\]'; then
             echo "GENERATE=true"
-            echo "GENERATE=true" >> $GITHUB_ENV
+            file_to_generate=$(echo "$commit_message" | grep -o 'drafts/[^ ]*')
+            echo "file_to_generate=$file_to_generate" >> $GITHUB_ENV
           else
             echo "GENERATE=false"
-            echo "GENERATE=false" >> $GITHUB_ENV
+            echo "file_to_generate=" >> $GITHUB_ENV
           fi
 
       - name: Get the latest modified markdown file
@@ -59,7 +62,12 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python scripts/translate_md.py ${{ env.latest_file }}
+          if [ -n "${{ env.file_to_translate }}" ]; then
+            python scripts/translate_md.py ${{ env.file_to_translate }}
+          else
+            echo "No markdown file specified"
+            exit 0
+          fi
 
       - name: Commit and push changes
         if: env.TRANSLATE == 'true'
@@ -84,10 +92,10 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          if [ -n "${{ env.latest_en_file }}" ]; then
-            python scripts/generate_image_and_update_md.py ${{ env.latest_en_file }}
+          if [ -n "${{ env.file_to_generate }}" ]; then
+            python scripts/generate_image_and_update_md.py ${{ env.file_to_generate }}
           else
-            echo "No markdown file changed"
+            echo "No markdown file specified"
             exit 0
           fi
 
