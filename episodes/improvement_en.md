@@ -1,3 +1,5 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-a0U4lDcgBKd21Qva6WaButsl.png?st=2024-05-25T03%3A01%3A03Z&se=2024-05-25T05%3A01%3A03Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-24T18%3A05%3A22Z&ske=2024-05-25T18%3A05%3A22Z&sks=b&skv=2021-08-06&sig=XmNk16nNhCN5jW5Gl4P3g6cfwzaTPjUJzttfQMkQ4e4%3D)
+
 Naturally, humans expanded their territories. What started as mere tribes evolved into nations. And then, wars happened.
 
 In the human realm, there emerged thousands of groups that self-identified as nations. They engaged in conflicts with neighboring nations to conquer more land and resources. In order to stand against a powerful nation, there were also small nations that cooperated with each other. They shared a different form of consciousness under names like alliances or coalitions, distinct from the idea of a nation.
