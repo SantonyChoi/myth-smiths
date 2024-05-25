@@ -34,6 +34,7 @@ jobs:
           echo "Last commit message: $commit_message"
           if echo "$commit_message" | grep -q '\[TRANSLATE\]'; then
             echo "TRANSLATE=true"
+            echo "TRANSLATE=true" >> $GITHUB_ENV
             file_to_translate=$(echo "$commit_message" | grep -o 'drafts/[^ ]*')
             echo "file_to_translate=$file_to_translate" >> $GITHUB_ENV
           else
@@ -43,6 +44,7 @@ jobs:
 
           if echo "$commit_message" | grep -q '\[GENERATE\]'; then
             echo "GENERATE=true"
+            echo "GENERATE=true" >> $GITHUB_ENV
             file_to_generate=$(echo "$commit_message" | grep -o 'drafts/[^ ]*')
             echo "file_to_generate=$file_to_generate" >> $GITHUB_ENV
           else
