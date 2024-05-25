@@ -2,8 +2,12 @@ name: Translate Episode
 
 on:
   pull_request:
+    # If laatest commit contains word "[TRANSLATE]", this action will be triggered
     paths:
-      - "episodes/*.md"
+      - "drafts/*.md"
+    types:
+      - opened
+      - synchronize
 
 jobs:
   translate_episode:
@@ -24,19 +28,31 @@ jobs:
         run: |
           pip install openai pyyaml
 
+      - name: Check for [TRANSLATE] in commit messages
+        id: check_translate
+        run: |
+          if git log --oneline -n 1 | grep -q '\[TRANSLATE\]'; then
+            echo "TRANSLATE=true" >> $GITHUB_ENV
+          else
+            echo "TRANSLATE=false" >> $GITHUB_ENV
+          fi
+
       - name: Get the latest modified markdown file
+        if: env.TRANSLATE == 'true'
         id: get_latest_file
         run: |
-          latest_file=$(git diff --name-only origin/main | grep 'episodes/.*\.md$' | grep -v '_en\.md$' | tail -n 1)
+          latest_file=$(git diff --name-only origin/main | grep 'drafts/.*\.md$' | grep -v '_en\.md$' | tail -n 1)
           echo "latest_file=$latest_file" >> $GITHUB_ENV
 
       - name: Translate Markdown
+        if: env.TRANSLATE == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python scripts/translate_md.py ${{ env.latest_file }}
 
       - name: Commit and push changes
+        if: env.TRANSLATE == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         run: |
