@@ -31,8 +31,10 @@ jobs:
         id: check_translate
         run: |
           if git log --oneline -n 1 | grep -q '\[TRANSLATE\]'; then
+            echo "TRANSLATE=true"
             echo "TRANSLATE=true" >> $GITHUB_ENV
           else
+            echo "TRANSLATE=false"
             echo "TRANSLATE=false" >> $GITHUB_ENV
           fi
 
@@ -65,8 +67,10 @@ jobs:
         id: check_generate
         run: |
           if git log --oneline -n 1 | grep -q '\[GENERATE\]'; then
+            echo "GENERATE=true"
             echo "GENERATE=true" >> $GITHUB_ENV
           else
+            echo "GENERATE=false"
             echo "GENERATE=false" >> $GITHUB_ENV
           fi
 
