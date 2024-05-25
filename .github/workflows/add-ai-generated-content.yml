@@ -1,4 +1,4 @@
-name: Translate Episode
+name: Add AI-generated content
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
       - synchronize
 
 jobs:
-  translate_episode:
+  add_ai_generated_content:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,22 +25,26 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai pyyaml
+          pip install openai pyyaml requests
 
-      - name: Print last commit message for debugging
-        run: |
-          set -eux
-          git log --oneline -n 1
-
-      - name: Check for [TRANSLATE] in commit messages
+      - name: Check for [TRANSLATE] and [GENERATE] in commit messages
         id: check_translate
         run: |
-          if git log --oneline -n 1 | grep -q '\[TRANSLATE\]'; then
+          commit_message=$(git log -2 --pretty=format:"%s" | tail -n 1)
+          echo "Last commit message: $commit_message"
+          if echo "$commit_message" | grep -q '\[TRANSLATE\]'; then
             echo "TRANSLATE=true"
             echo "TRANSLATE=true" >> $GITHUB_ENV
           else
             echo "TRANSLATE=false"
             echo "TRANSLATE=false" >> $GITHUB_ENV
+          fi
+          if echo "$commit_message" | grep -q '\[GENERATE\]'; then
+            echo "GENERATE=true"
+            echo "GENERATE=true" >> $GITHUB_ENV
+          else
+            echo "GENERATE=false"
+            echo "GENERATE=false" >> $GITHUB_ENV
           fi
 
       - name: Get the latest modified markdown file
@@ -65,24 +69,14 @@ jobs:
           git config --global user.name 'myth-smiths-bot'
           git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
           git add .
-          git commit -m 'Add translated episode'
+          git commit -m 'Create translation'
           git push origin HEAD:${{ github.head_ref }}
 
-      - name: Check for [GENERATE] in commit messages
-        id: check_generate
-        run: |
-          if git log --oneline -n 1 | grep -q '\[GENERATE\]'; then
-            echo "GENERATE=true"
-            echo "GENERATE=true" >> $GITHUB_ENV
-          else
-            echo "GENERATE=false"
-            echo "GENERATE=false" >> $GITHUB_ENV
-          fi
-
       - name: Get the latest modified markdown file
+        if: env.GENERATE == 'true'
         id: get_latest_en_file
         run: |
-          latest_en_file=$(git diff --name-only origin/main | grep 'drafts/.*\.md$' | grep -v '_en\.md$' | tail -n 1)
+          latest_en_file=$(git diff --name-only origin/main | grep 'drafts/.*_en\.md$' | tail -n 1)
           echo "latest_en_file=$latest_en_file" >> $GITHUB_ENV
 
       - name: Generate image and update Markdown
@@ -104,7 +98,6 @@ jobs:
         run: |
           git config --global user.name 'myth-smiths-bot'
           git config --global user.email 'santony.choi+myth-smiths-bot@gmail.com'
-          git pull
           git add .
-          git commit -m 'Add generated image to draft' || echo "No changes to commit"
+          git commit -m 'Gererate image to draft'
           git push origin HEAD:${{ github.head_ref }}
