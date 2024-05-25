@@ -1,3 +1,5 @@
+![Episode Image](https://oaidalleapiprodscus.blob.core.windows.net/private/org-GQpglIXiFedJ91szlzMSEyNG/myth-smiths/img-jwdaz4aCckxlWKXFjqdagNU8.png?st=2024-05-25T01%3A48%3A50Z&se=2024-05-25T03%3A48%3A50Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-24T19%3A28%3A27Z&ske=2024-05-25T19%3A28%3A27Z&sks=b&skv=2021-08-06&sig=B/J%2BrTp6IgW36bgXIxK0bKFJjpX6Hv%2Bjgp56Lb0YJ4o%3D)
+
 Let's talk about religion. Intellectual beings, especially species that have dominion over their respective domains, shared a commonality: they all had their own religions. The forms varied, but the essence was the same.
 
 Religion gave beings facing death the courage not to fear it. Ultimately, for beings who must face death, the hope that religion bestows is an invaluable element unlike any other.
